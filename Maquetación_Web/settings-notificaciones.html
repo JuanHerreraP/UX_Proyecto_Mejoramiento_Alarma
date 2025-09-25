@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajustes de Notificaciones - Alarma Activa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <a href="main.html" class="back-icon"><img src="img/left-long-solid-full.svg" alt="back"></a>
+        <h2>Alarma Activa</h2>
+        <div class="profile-logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+    </header>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+            </div>
+            <ul class="sidebar-nav">
+                <li><a href="settings-cuenta.html">Cuenta</a></li>
+                <li><a href="settings-notificaciones.html" class="active">Notificaciones</a></li>
+                <li><a href="settings-calendario.html">Calendario</a></li>
+                <li><a href="settings-apariencia.html">Apariencia</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="settings-acercade.html">Acerca de</a>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            
+            <div class="settings-card">
+                <h2>Ajustes de Notificaciones</h2>
+                <p class="subtitle">Ajuste los tipos de notificaciones que desea recibir</p>
+
+                <div class="setting-item">
+                    <div class="setting-text">
+                        <h4>Notificaciones de Escritorio</h4>
+                        <p>Activa o desactiva las notificaciones en tu computador.</p>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <div class="setting-item">
+                    <div class="setting-text">
+                        <h4>Notificaciones de móviles</h4>
+                        <p>Activa o desactiva las notificaciones en tu celular.</p>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                
+                <h4 class="settings-section-title">Recordatorios</h4>
+
+                <div class="setting-item">
+                    <div class="setting-text">
+                        <h5>Recordatorios de Pastillas</h5>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <div class="setting-item">
+                    <div class="setting-text">
+                        <h5>Recordatorios de Reuniones</h5>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <div class="setting-item">
+                    <div class="setting-text">
+                        <h5>Recordatorios de Alarmas</h5>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

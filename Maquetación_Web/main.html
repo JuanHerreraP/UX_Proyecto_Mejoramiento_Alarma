@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Alarma Activa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <a href="main.html"><p>Alarma Activa</p></a>
+        <div class="profile-logo">
+            <a href="settings-cuenta.html"><img src="img/logo.png" alt="Logo"></a>
+        </div>
+    </header>
+    <div class="app-container">
+        <div class="main-sidebar">
+            <section class="card alarmas">
+                <h2>Alarmas</h2>
+                <div class="alarma-item">
+                    <div class="left-item">
+                        <div class="alarma-text">Despertar</div>
+                        <div class="hora">5:00 <span>AM</span></div>
+                        <div class="dias">L M X J V</div>
+                    </div>
+                    <div class="right-item">
+                        <div class="alarm-toggle">
+                                <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="alarma-item">
+                    <div class="left-item">
+                        <div class="alarma-text">Despertar</div>
+                        <div class="hora">7:00 <span>AM</span></div>
+                        <div class="dias">S D</div>
+                    </div>
+                    <div class="right-item">
+                        <div class="alarm-toggle">
+                                <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-add">＋</button>
+            </section>
+        </div>
+        <div class="main-content">
+            <div class="upper-cards">
+                <a href="estadisticas.html">
+                    <section class="card racha">
+                        <h2>3</h2>
+                        <p>Días de Racha</p>
+                        <div class="dias-racha">
+                            <span>L</span>
+                            <span>M</span>
+                            <span>X</span>
+                            <span>J</span>
+                            <span>V</span>
+                            <span>S</span>
+                            <span>D</span>
+                        </div>
+                        <div class="dias-racha">
+                            <span class="ok">✔</span>
+                            <span class="fail">✖</span>
+                            <span class="fail">✖</span>
+                            <span class="ok">✔</span>
+                            <span class="ok">✔</span>
+                            <span class="ok">✔</span>
+                            <span class="pending">✔</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="calendario.html">
+                    <section class="card calendario">
+                        <h3>Agosto</h3>
+                        <table class="table-calendario">
+                            <thead>
+                            <tr>
+                                <th>L</th><th>M</th><th>X</th><th>J</th><th>V</th><th>S</th><th>D</th>
+                            </tr>
+                            </thead>
+                            
+                            <tbody>
+                            <tr><td class="blur">28</td><td class="blur">29</td><td class="blur">30</td><td class="blur">31</td><td>1</td><td>2</td><td>3</td></tr>
+                            <tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+                            <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr>
+                            <tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr>
+                            <tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr>
+                            <!-- ...más filas -->
+                            </tbody>
+                        </table>
+                    </section>
+                </a>
+            </div>
+            <div class="lower-cards">
+                <a href="estadisticas.html">
+                    <section class="card grafico">
+                        <div class="bars-title">
+                            <h2>Agosto</h2>
+                            <p>Estadísticas de segundos en levantarse</p>
+                        </div>
+                        <div class="bars">
+                            <div style="height:80%"></div>
+                            <div style="height:30%"></div>
+                            <div style="height:20%"></div>
+                            <div style="height:60%"></div>
+                        </div>
+                        <div class="bars-numbers">
+                            <p>9</p>
+                            <p>10</p>
+                            <p>11</p>
+                            <p>12</p>
+                        </div>
+                    </section>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

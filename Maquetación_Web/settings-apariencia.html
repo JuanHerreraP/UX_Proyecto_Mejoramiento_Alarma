@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajustes de Apariencia - Alarma Activa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <a href="main.html" class="back-icon"><img src="img/left-long-solid-full.svg" alt="back"></a>
+        <h2>Alarma Activa</h2>
+        <div class="profile-logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+    </header>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+            </div>
+            <ul class="sidebar-nav">
+                <li><a href="settings-cuenta.html">Cuenta</a></li>
+                <li><a href="settings-notificaciones.html">Notificaciones</a></li>
+                <li><a href="settings-calendario.html">Calendario</a></li>
+                <li><a href="settings-apariencia.html" class="active">Apariencia</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="settings-acercade.html">Acerca de</a>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            
+            <div class="settings-card">
+                <h2>Ajustes de Apariencia</h2>
+                <p class="subtitle">Ajuste el tema y su color de énfasis</p>
+
+                <div class="settings-section">
+                    <h4>Tema del sistema</h4>
+                    <p>Selecciona el tema de la UI</p>
+                    <div class="theme-selector">
+                        <div class="theme-option active">
+                            <img src="img/modoClaro.png" alt="Tema Claro">
+                            <span>Tema Claro</span>
+                        </div>
+                        <div class="theme-option">
+                            <img src="img/modoOscuro.png" alt="Tema Oscuro">
+                            <span>Tema Oscuro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h4>Color de acento</h4>
+                    <p>Selecciona el color de acento del sistema</p>
+                    <div class="color-selector">
+                        <div class="color-swatch" style="background-color: #FF6B6B;"></div>
+                        <div class="color-swatch" style="background-color: #4ECDC4;"></div>
+                        <div class="color-swatch" style="background-color: #45B7D1;"></div>
+                        <div class="color-swatch" style="background-color: #FFA07A;"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

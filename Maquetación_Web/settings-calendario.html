@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajustes de Calendario - Alarma Activa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <a href="main.html" class="back-icon"><img src="img/left-long-solid-full.svg" alt="back"></a>
+        <h2>Alarma Activa</h2>
+        <div class="profile-logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+    </header>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+            </div>
+            <ul class="sidebar-nav">
+                <li><a href="settings-cuenta.html">Cuenta</a></li>
+                <li><a href="settings-notificaciones.html">Notificaciones</a></li>
+                <li><a href="settings-calendario.html" class="active">Calendario</a></li>
+                <li><a href="settings-apariencia.html">Apariencia</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="settings-acercade.html">Acerca de</a>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            
+            <div class="settings-card">
+                <h2>Ajustes de Calendario</h2>
+                <p class="subtitle">Ajustes y sincronización de calendario</p>
+
+                <h4 class="settings-section-title">Configuración básica</h4>
+                <div class="setting-item">
+                    <span>Día en el que empieza la semana</span>
+                    <select class="form-select">
+                        <option>Lunes</option>
+                        <option>Domingo</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <span>Colorear festivos</span>
+                    <select class="form-select">
+                        <option>Solo domingos</option>
+                        <option>Sábados y domingos</option>
+                    </select>
+                </div>
+
+                <h4 class="settings-section-title">Sincronización</h4>
+                 <div class="setting-item">
+                    <span>Cuenta de Google sincronizada</span>
+                    <input type="email" value="adriana.arce@gmail.com" readonly>
+                </div>
+                <div class="setting-item">
+                    <span>Añadir alarmas al calendario sincronizado</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <span>Añadir recordatorios de calendario como alarmas</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
